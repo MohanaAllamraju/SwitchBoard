@@ -7,14 +7,17 @@ namespace Switch
     public class Switch
     {
         public Appliance Appliance;
+
         public SwitchStatus SwitchMode;
 
+        public Switch(SwitchStatus switchMode)
+        {
+            this.SwitchMode = switchMode;
+        }
 
-        public Switch(Appliance appliance, SwitchStatus switchMode)
+        public void AddAppliance(Appliance appliance)
         {
             this.Appliance = appliance;
-            this.SwitchMode = switchMode;
-
         }
     }
 }
