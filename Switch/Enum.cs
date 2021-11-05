@@ -15,4 +15,12 @@ namespace Switch
         Off,
         On
     }
+    
+    public enum ApplianceType
+    {
+        TV,
+        AC,
+        FAN,
+        LIGHT
+    }
 }

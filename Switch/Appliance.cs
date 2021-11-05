@@ -7,14 +7,18 @@ namespace Switch
 
     public class Appliance
     {
-       int SwitchID;
-
-       SwitchStatus SwitchStatus;
-       
-        public Appliance(int switchID, SwitchStatus switchStatus)
+        public  SwitchStatus SwitchStatus;
+        public ApplianceType Type;
+        public ApplianceStatus applianceStatus;
+        public Appliance(SwitchStatus switchStatus)
         {
-            this.SwitchID = switchID;
             this.SwitchStatus = switchStatus;
+        }
+
+        public Appliance(ApplianceType type)
+        {
+            this.Type = type;
+
         }
     }
 }

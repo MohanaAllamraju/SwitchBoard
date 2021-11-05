@@ -17,6 +17,9 @@ namespace Switch
         public void ChangeStatus(Switch eSwitch)
         {
             eSwitch.SwitchMode = (eSwitch.SwitchMode == SwitchStatus.Off ? SwitchStatus.On : SwitchStatus.Off);
+            eSwitch.Appliance.SwitchStatus = (eSwitch.SwitchMode == SwitchStatus.Off ? SwitchStatus.On : SwitchStatus.Off);
+            eSwitch.Appliance.applianceStatus = (eSwitch.Appliance.applianceStatus == ApplianceStatus.Off ? ApplianceStatus.On : ApplianceStatus.Off);
         }
+
     }
 }
